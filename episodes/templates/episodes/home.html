@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Bottle Episodes - Home
+{% endblock title %}
+
+{% block content %}
+<header>
+    <nav>
+        <a href = "{% url "show_about" %}">About</a>
+        <a href = "{% url "show_contact" %}">Contact</a>
+    </nav>
+</header>
+<main>
+    <h1 class="website-title" >Bottle Episodes</h1>
+    <h2>Over-engineering fun since 2018</h2>
+    <p>
+        Here I am, practicing HTML, learning different tags, and just having a nice time exploring HTML and CSS for now. I can already feel myself becoming a programmer. Our website will be so beautiful and cool.
+    </p>
+    <h2>Past Episodes</h2>
+    <p>
+        Pretty soon, I'm going to learn more CSS to make this page prettier!
+    </p>
+</main>
+{% endblock content %}

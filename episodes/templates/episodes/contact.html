@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Bottle Episodes - Inquires
+{% endblock title %}
+
+{% block content %}
+<header>
+    <nav>
+        <a href="{% url "show_home" %}">Home</a>
+        <a href="{% url "show_about" %}">About</a>
+    </nav>
+</header>
+<main>
+    <h1>Interested in a custom episode? Fill out the form below.</h1>
+    <div class = "form">
+    <div>
+        <h2>name:</h2>
+        <input type = "text"
+            name = "name"
+            maxlength = "200"
+            placeholder = "your name">
+    </div>
+    <div>
+        <h2>email:</h2>
+        <input type = "email"
+            name = "email"
+            maxlength = "200"
+            placeholder = "you@example.com">
+    </div>
+    <div>
+        <h2>message:</h2>
+        <textarea name = "content"
+            maxlength = "2000"
+            placeholder = "only 2000 character">
+        </textarea>
+    </div>
+    <button type="submit">Submit</button>
+    </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Bottle Episodes - Creators
+{% endblock title %}
+
+{% block content %}
+<header>
+    <nav>
+        <a href="{% url "show_home" %}">Home</a>
+        <a href="{% url "show_contact" %}">Contact</a>
+    </nav>
+</header>
+<main>
+    <h1>About the Creators</h1>
+    <div id="container">
+    <div class="column"><img src="{% static 'episodes/craetors2.png' %}"></div>
+    <div class="row">
+    <div class ="d">
+        <p>
+            Maya Jamner and Claudia Harrison met at Colorado College.
+            They connected over their shared interest in personality tests and cult TV shows.
+            But if it was anything that solidified their bond, it was their shared penchant for over-engineering fun.
+        </p>
+        <p>
+            Long before they met, Maya knew of Claudia from the notorious drinking game she’d created that had captivated their entire freshman class. Maya had a background in theatre and comedy.
+        </p>
+        <p>
+            Her additional explorations in the immersive theatre scene helped her realize that the parties she and Claudia had been writing for their friends could be turned into full-blown theatrical productions.
+        </p>
+        <p>
+            They chose the name “Bottle Episodes” because they aim for their shows to resemble some of their favorite episodes of television, which are distinguished by deep character studies written for site-specific locations.
+        </p>
+    </div>
+    </div>
+    </div>
+</main>
+{% endblock content %}

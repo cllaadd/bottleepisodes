@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+height: 100%;
+}
+
+/* body:before, body:after {
+  content: "";
+  position: fixed;
+  background:powderblue;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+body:before {
+  top: 0;
+}
+body:after {
+  bottom: 0;
+} */
+
+
+body {
+  /* display:flex;
+  flex-direction:column; */
+  min-height: 100vh;
+  margin:0;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: mediumslateblue;
+  font-family: 'Roboto', sans-serif;
+  /* border-left: 4px solid powderblue;
+  border-right: 4px solid powderblue; */
+  padding: 40px;
+	overflow-x: hidden; /*For Opera */
+	-webkit-box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+	-moz-box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+	box-shadow:
+		inset #19d4ff 0 0 0 5px,
+		inset #18cdf7 0 0 0 1px,
+		inset #53dfff 0 0 0 10px,
+		inset #50d8f7 0 0 0 11px,
+		inset #8ce9ff 0 0 0 16px,
+		inset #88e2f7 0 0 0 17px,
+		inset #c5f4ff 0 0 0 22px,
+		inset #bfecf7 0 0 0 23px;
+
+}
+
+/* main {
+  margin-bottom: 50px;
+  margin-left: 10px;
+  flex:1;
+  } */
+
+p {
+  color: white;
+  border: 4px solid powderblue;
+  padding: 10px;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  background-color: deeppink;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.d {
+  width: 80%;
+  float: left;
+}
+
+
+/* #right {
+  /* height: 600px;
+  position: absolute;
+  left: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  */
+
+/* Clear floats after the columns */
+/* .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+/* @media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}  */
+
+header {
+padding: 10px;
+min-height:50px;
+position: sticky;
+}
+
+nav {
+color: white;
+font-family: Verdana, Helvetica, sans-serif;
+/* padding-top: 10px; */
+}
+
+nav>a {
+padding-right: 10px;
+padding-bottom: 10px;
+}
+
+h1 {
+  padding-bottom: 30px;
+}
+
+.website-title {
+  color: powderblue;
+  font-size: 96px;
+  font-weight: normal;
+  font-family: 'Modak', cursive;
+  padding: 0px;
+
+}
+
+.form {
+border: 4px solid powderblue;
+padding: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+background-color: deeppink;
+}
+
+textarea {
+width: 300px;
+height: 150px;
+color: black;
+}
+
+input {
+color: black;
+}
+
+/* .content {
+flex: 1 0 auto;
+}
+
+.footer {
+flex-shrink: 0;
+} */
+
+footer {
+min-height:50px;
+left: 50px;;
+right: 50px;
+padding-bottom: 50px;
+position: fixed;
+bottom: 0;
+}
+
+img {
+width: 400px;
+height: 600px;
+}
+
+.my-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 5px;
+  bottom: 20px;
+}
+
+.purple-box {
+  background-color: #721EE3;
+  border: 4px solid lavender;
+}
+
+.orange-box {
+  background-color: orangered;
+  border: 4px solid orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: greenyellow;
+}
+
+button {
+  color: black;
+}
